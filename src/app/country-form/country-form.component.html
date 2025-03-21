@@ -1,0 +1,18 @@
+<h2>{{ isEditMode ? 'Редактировать страну' : 'Добавить страну' }}</h2>
+<form (ngSubmit)="onSubmit()" class="country-form">
+  <div class="form-group">
+    <label for="name">Название:</label>
+    <input id="name" [(ngModel)]="country.name" name="name" required #nameInput="ngModel" required class="form-input" maxlength="255">
+    <div *ngIf="nameInput.errors?.['maxlength']" class="error-message">
+      Название страны должно быть не длиннее 255 символов.
+    </div>
+    <div *ngIf="nameInput.errors?.['required']" class="error-message">
+      Название страны обязательно.
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="capital">Столица:</label>
+    <input id="capital" [(ngModel)]="country.capital" name="capital" required class="form-input" maxlength="255">
+  </div>
+  <button type="submit" [disabled]="nameInput.invalid">{{ isEditMode ? 'Обновить' : 'Создать' }}</button>
+</form>

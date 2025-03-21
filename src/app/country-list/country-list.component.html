@@ -1,0 +1,8 @@
+<h2>Список стран</h2>
+<ul class="country-list">
+  <li *ngFor="let country of countries" class="country-item">
+    <span class="country-info">{{ country.name }} - {{ country.capital }}</span>
+    <button class="delete-button" (click)="deleteCountry(country.id!)">Удалить</button>
+    <a class="edit-link" [routerLink]="['/edit', country.id]">Редактировать</a>
+  </li>
+</ul>

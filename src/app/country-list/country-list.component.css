@@ -1,0 +1,74 @@
+/* Общие стили для списка */
+.country-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+/* Стили для каждого элемента списка */
+.country-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.country-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Стили для информации о стране */
+.country-info {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Стили для кнопки удаления */
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+/* Стили для ссылки редактирования */
+.edit-link {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-link:hover {
+  background-color: #45a049;
+}
+
+/* Стили для ссылки добавления страны */
+.add-country-link {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.add-country-link:hover {
+  background-color: #007B9E;
+}
