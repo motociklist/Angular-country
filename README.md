@@ -1,14 +1,13 @@
 # CountryApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+Этот проект был создан с использованием [Angular CLI](https://github.com/angular/angular-cli) версии 19.2.3.
 
-## Development server
+## Сервер разработки
 
-To start a local development server, run:
+Чтобы запустить локальный сервер разработки, выполните:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
+После запуска сервера откройте браузер и перейдите по адресу `http://localhost:4200/`. Приложение будет автоматически перезагружаться при каждом изменении любого из исходных файлов.
